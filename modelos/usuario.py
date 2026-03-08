@@ -1,4 +1,4 @@
-# [referencia source 49-56] Tarea: Clase Usuario (modelo)
+# Clase Usuario (modelo)
 class Usuario:
     """
     Representa a un usuario registrado en la biblioteca.
@@ -9,7 +9,6 @@ class Usuario:
         self.__user_id = user_id  # ID de usuario único (público para identificación)
         self.__nombre = nombre
         
-        # [referencia source 54, 56] Requisito técnico:
         # Utilizar lista para almacenar los libros actualmente prestados.
         # Las listas permiten añadir/quitar elementos fácilmente manteniendo orden de solicitud.
         self.__libros_prestados = [] 
@@ -21,7 +20,7 @@ class Usuario:
     def get_nombre(self) -> str:
         return self.__nombre
 
-    # [referencia source 80] Funcionalidad: Listar libros prestados a un usuario.
+    #  Funcionalidad: Listar libros prestados a un usuario.
     def get_libros_prestados(self) -> list:
         # Retorna una copia de la lista para evitar manipulación externa directa
         return list(self.__libros_prestados)

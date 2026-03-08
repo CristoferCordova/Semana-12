@@ -1,4 +1,4 @@
-# [referencia source 41-48] Tarea: Clase Libro (modelo)
+# Tarea: Clase Libro (modelo)
 class Libro:
     """
     Representa un libro dentro del sistema de la biblioteca.
@@ -8,7 +8,6 @@ class Libro:
     def __init__(self, isbn: str, titulo: str, autor: str, categoria: str):
         self.__isbn = isbn  # Identificador único (público para la búsqueda, protegido por encapsulamiento)
         
-        # [referencia source 44, 48] Requisito técnico:
         # Utilizar tupla para almacenar título y autor (inmutables).
         self.__datos_principales = (titulo, autor)
         
